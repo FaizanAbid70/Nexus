@@ -26,6 +26,8 @@ import { DocumentsPage } from './pages/documents/DocumentsPage';
 import { SettingsPage } from './pages/settings/SettingsPage';
 import { HelpPage } from './pages/help/HelpPage';
 import { DealsPage } from './pages/deals/DealsPage';
+import { MeetingsPage } from './pages/meetings/MeetingsPage';
+import { VideoCallPage } from './pages/call/VideoCallPage';
 
 // Chat Pages
 import { ChatPage } from './pages/chat/ChatPage';
@@ -71,6 +73,13 @@ function App() {
           <Route path="/documents" element={<DashboardLayout />}>
             <Route index element={<DocumentsPage />} />
           </Route>
+          
+          <Route path="/meetings" element={<DashboardLayout />}>
+            <Route index element={<MeetingsPage />} />
+          </Route>
+
+          {/* Video call room - no DashboardLayout wrapper, full screen */}
+          <Route path="/call/:roomName" element={<VideoCallPage />} />
           
           <Route path="/settings" element={<DashboardLayout />}>
             <Route index element={<SettingsPage />} />
