@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Menu, X, Bell, MessageCircle, User, LogOut, Building2, CircleDollarSign } from 'lucide-react';
+import { Menu, X, Bell, MessageCircle, User, LogOut, Building2, CircleDollarSign, CalendarClock } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { Avatar } from '../ui/Avatar';
 import { Button } from '../ui/Button';
@@ -40,6 +40,11 @@ export const Navbar: React.FC = () => {
       text: 'Messages',
       path: user ? '/messages' : '/login',
     },
+    {
+  icon: <CalendarClock size={18} />,
+  text: 'Meetings',
+  path: user ? '/meetings' : '/login',
+},
     {
       icon: <Bell size={18} />,
       text: 'Notifications',
