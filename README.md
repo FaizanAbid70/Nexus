@@ -4,7 +4,7 @@ React + TypeScript frontend for **Nexus**, an Investor & Entrepreneur collaborat
 platform. Built as part of a Full Stack Development Internship (Developers Hub).
 
 **Live app:** https://nexus-five-tau.vercel.app
-**Live API (backend):** https://web-production-f80ee.up.railway.app/api/
+**Live API (backend):** https://web-production-f80ee.up.railway.app/api/auth/ping/
 
 ## Tech Stack
 - React + TypeScript + Vite
